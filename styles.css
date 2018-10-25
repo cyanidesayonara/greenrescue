@@ -69,6 +69,7 @@ p {
 }
 
 .ajax {
+  color: black;
   cursor: pointer;
   text-decoration: none;
 }
@@ -81,16 +82,50 @@ footer {
   left: 0;
   right: 0;
 }
-.item {
+.list .item {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  background-color: #ddd;
+  background: #ddd;
   margin: 10px 0;
 }
-.item span {
+.list .item:first-child:hover {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+}
+.list .item span {
   width: 50%;
   padding: 5px;
 }
-
+.detail .img {
+  float: left;
+  width: 40%;
+  height: 200px;
+  background: #ddd;
+  margin-right: 2%;
+}
+.detail ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.detail ul li {
+  margin: 7px 0;
+}
+.detail ul li span {
+  float: right;
+  margin-left: 5px;
+}
+.luomu {
+  background: #6ACA25;
+}
+.detail .contact {
+  display: flex;
+  width: 58%;
+  height: 100px;
+  background: #ddd;
+}
+.detail .description {
+  background: #ddd;
+  height: 150px;
+}
