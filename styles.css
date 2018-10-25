@@ -82,6 +82,15 @@ footer {
   left: 0;
   right: 0;
 }
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  display: inline-block;
+  padding: 5px;
+}
 .list .item {
   display: -ms-flexbox;
   display: flex;
