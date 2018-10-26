@@ -10,9 +10,6 @@ def index(request):
         return render(request, "search.html")
     return render(request, "index.html")
 
-def search(request):
-    
-
 def list(request):
     return render(request, "list.html")
 
