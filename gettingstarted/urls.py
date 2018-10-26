@@ -15,10 +15,10 @@ import hello.views as views
 # Learn more here: https://docs.djangoproject.com/en/2.1/topics/http/urls/
 
 urlpatterns = [
-    path(r"^$", views.index, name="index"),
-    path(r"^list/$", views.list, name="list"),
-    path(r"^detail/$", views.detail, name="detail"),
-    path("^db/$", views.db, name="db"),
-    path("^admin/$", admin.site.urls),
+    path(r"", views.index, name="index"),
+    path(r"list/", views.list, name="list"),
+    path(r"detail/", views.detail, name="detail"),
+    path("^b/", views.db, name="db"),
+    path("^dmin/", admin.site.urls),
 ]
 
