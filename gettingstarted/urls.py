@@ -18,7 +18,7 @@ urlpatterns = [
     path(r"^$", views.index, name="index"),
     path(r"^list/$", views.list, name="list"),
     path(r"^detail/$", views.detail, name="detail"),
-    path("^db/$", hello.views.db, name="db"),
+    path("^db/$", views.db, name="db"),
     path("^admin/$", admin.site.urls),
 ]
 
