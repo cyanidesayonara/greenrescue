@@ -6,7 +6,7 @@ from .models import Greeting
 # Create your views here.
 def index(request):
     # return HttpResponse('Hello from Python!')
-    if request.is_ajax:
+    if request.is_ajax():
         return render(request, "search.html")
     return render(request, "index.html")
 
