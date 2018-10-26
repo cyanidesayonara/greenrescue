@@ -6,10 +6,12 @@ from .models import Greeting
 # Create your views here.
 def index(request):
     # return HttpResponse('Hello from Python!')
+    if request.is_ajax:
+        return render(request, "search.html")
     return render(request, "index.html")
 
 def search(request):
-    return render(request, "search.html")
+    
 
 def list(request):
     return render(request, "list.html")
