@@ -19,4 +19,7 @@ $(document)
     var active = $(".dropdown>.option").get(0);
     $(".dropdown>.option").replaceWith(selected);
     this.replaceWith(active);
+  })
+  .on("click", ".buy.target", function() {
+    alert("Onneksi olkoon!");
   });
