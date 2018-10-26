@@ -20,6 +20,6 @@ $(document)
     $(".dropdown>.option").replaceWith(selected);
     this.replaceWith(active);
   })
-  .on("click", ".buy.target", function() {
-    alert("Onneksi olkoon!");
+  .on("click", ".buy", function() {
+    alert("Ostettu!");
   });
