@@ -19,6 +19,7 @@ $(document)
     var active = $(".dropdown>.option").get(0);
     $(".dropdown>.option").replaceWith(selected);
     this.replaceWith(active);
+    $(this).parents(".dropdown").blur();
   })
   .on("click", ".buy", function() {
     alert("Ostettu!");

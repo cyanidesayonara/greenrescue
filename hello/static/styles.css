@@ -68,6 +68,9 @@ p {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.option {
+  cursor: pointer;
+}
 
 .ajax {
   color: black;
