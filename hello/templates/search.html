@@ -1,35 +1,15 @@
-<article class="search">
-  <p>
-    Aseta tuotefiltteri
-  </p>
-  <div class="dropdown">
-    <p class="option">
-      Kaikki
-    </p>
-    <div class="dropdown-content">
-      <p class="option">
-        Peruna
-      </p>
-      <p class="option">
-        Kaali
-      </p>
-      <p class="option">
-        Porkkana
-      </p>  
-      <p class="option">
-        Mango
-      </p>                     
-    </div> 
-  </div>
-  <p>
-    <span>
-      Näytä vain luomu
-    </span>
-    <input type="checkbox">
-  </p>
-  <p class="btns">
-    <a class="btn ajax" href="/list/" data-dump=".main">
-      Katso mitä lähiseudulta löytyy
-    </a>
-  </p>
-</article>
+<div class="search">
+  <form class="search-form" method="GET" action="/list/">
+    <input class="textfield q" name="q" type="search" placeholder="Etsi..." aria-label="Hae" maxlength="30"
+      autocomplete="off" accept-charset="utf-8" />
+    <button class="btn ajax" type="submit" title="Hae" data-url="/list/" data-dump=".main">
+      <i class="fas fa-search"></i>
+    </button>
+    <button class="btn" type="button" title="Hakuasetukset" onclick="openModal()">
+      <i class="fas fa-ellipsis-h"></i>
+    </button>
+    <button class="btn ajax" type="submit" title="Hae" data-url="/list/" data-dump=".main">
+      Hae
+    </button>
+  </form>
+</div>

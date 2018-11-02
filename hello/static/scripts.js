@@ -8,7 +8,7 @@ function closeModal() {
 $(document)
   .on("click", ".ajax", function(e) {
     e.preventDefault();
-    var url = this.href;
+    var url = $(this).data("url");
     var dump = $(this).data("dump");
     $.ajax({
       type: "GET",
