@@ -14,14 +14,6 @@ $(document)
         $(dump).html(response);
       })
   })
-  .on("click", ".dropdown-content .option", function(e) {
-    e.preventDefault();
-    var selected = $(this).clone();
-    var active = $(".dropdown>.option").get(0);
-    $(".dropdown>.option").replaceWith(selected);
-    this.replaceWith(active);
-    $(this).parents(".dropdown").blur();
-  })
   .on("click", ".buy", function() {
     alert("Ostettu!");
   });

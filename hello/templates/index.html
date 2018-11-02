@@ -5,66 +5,35 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta name="theme-color" content="#08AE9E">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" href="static/styles.css">
     <title>Green Rescue</title>
   </head>
   <body>
-    <header>
+    <nav>
     <a class="ajax" href="" data-dump=".main">
       <h1>
         Green Rescue
       </h1>
     </a>
-    </header>
-    <section class="main">
-      <article class="search">
-        <p>
-          Aseta tuotefiltteri
-        </p>
-        <div class="dropdown">
-          <p class="option">
-            Kaikki
-          </p>
-          <div class="dropdown-content">
-            <p class="option">
-              Peruna
-            </p>
-            <p class="option">
-              Kaali
-            </p>
-            <p class="option">
-              Porkkana
-            </p>  
-            <p class="option">
-              Mango
-            </p>                     
-          </div> 
-        </div>
-        <p>
-          <span>
-            Näytä vain luomu
-          </span>
-          <input type="checkbox">
-        </p>
-        <p class="btns">
-          <a class="btn ajax" href="/list/" data-dump=".main">
-            Katso mitä lähiseudulta löytyy
-          </a>
-        </p>
-      </article>
-    </section>
-    <footer>
-      <ul>
-        <li>Yhteystiedot</li>
-        <li>Muut tiedot</li>
-        <li>Lisää tietoa</li>
-      </ul>
-      <ul>
-        <li>Kirjautuminen</li>
-        <li>Haku</li>
-        <li>Asetukset</li>
-      </ul>      
-    </footer>
+    </nav>
+    <div class="main">
+      <div class="search">
+        <form class="search-form" method="GET" action="/list/">
+          <input class="textfield q" name="q" type="search" placeholder="Etsi..." aria-label="Hae"
+            maxlength="30" autocomplete="off" accept-charset="utf-8" />
+          <button class="btn" type="submit" title="Hae">
+            <i class="fas fa-search"></i>
+          </button>
+          <button class="btn" type="button" title="Hakuasetukset">
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
+          <button class="btn" type="submit" title="Hae">
+            Hae
+          </button>
+        </form>
+      </div>
+    </div>
     <div class="modal">
 
     </div>
