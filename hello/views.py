@@ -10,11 +10,14 @@ def index(request):
         return render(request, "search.html")
     return render(request, "index.html")
 
-def list(request):
-    return render(request, "list.html")
+def drop(request):
+    return render(request, "drop.html")
 
 def detail(request):
     return render(request, "detail.html")
+
+def settings(request):
+    return render(request, "settings.html")
 
 def db(request):
 

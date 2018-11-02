@@ -1,15 +1,13 @@
 <div class="search">
-  <form class="search-form" method="GET" action="/list/">
-    <input class="textfield q" name="q" type="search" placeholder="Etsi..." aria-label="Hae" maxlength="30"
-      autocomplete="off" accept-charset="utf-8" />
-    <button class="btn ajax" type="submit" title="Hae" data-url="/list/" data-dump=".main">
-      <i class="fas fa-search"></i>
-    </button>
-    <button class="btn" type="button" title="Hakuasetukset" onclick="openModal()">
-      <i class="fas fa-ellipsis-h"></i>
-    </button>
-    <button class="btn ajax" type="submit" title="Hae" data-url="/list/" data-dump=".main">
-      Hae
-    </button>
-  </form>
+  <input class="textfield q" name="q" type="search" placeholder="Etsi..." aria-label="Hae" maxlength="30"
+    autocomplete="off" accept-charset="utf-8" />
+  <button class="btn ajax" type="submit" title="Hae" data-url="/drop/" data-dump=".main">
+    <i class="fas fa-search"></i>
+  </button>
+  <button class="btn ajax" type="button" title="Hakuasetukset" data-url="/settings/" data-dump=".modal">
+    <i class="fas fa-ellipsis-h"></i>
+  </button>
+  <button class="btn ajax" type="submit" title="Hae" data-url="/drop/" data-dump=".main">
+    Hae
+  </button>
 </div>

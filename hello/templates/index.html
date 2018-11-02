@@ -19,66 +19,20 @@
     </nav>
     <div class="main">
       <div class="search">
-        <form class="search-form" method="GET" action="/list/">
-          <input class="textfield q" name="q" type="search" placeholder="Etsi..." aria-label="Hae"
-            maxlength="30" autocomplete="off" accept-charset="utf-8" />
-          <button class="btn ajax" type="submit" title="Hae" data-url="/list/" data-dump=".main">
-            <i class="fas fa-search"></i>
-          </button>
-          <button class="btn" type="button" title="Hakuasetukset" onclick="openModal()">
-            <i class="fas fa-ellipsis-h"></i>
-          </button>
-          <button class="btn ajax" type="submit" title="Hae" data-url="/list/" data-dump=".main">
-            Hae
-          </button>
-        </form>
-      </div>
-    </div>
-    <div class="modal" onclick="closeModal()">
-      <div class="filter">
-        <h2>
-          Suodata hakutuloksia
-        </h2>
-        <ul>
-          <li>
-            <input type="checkbox">
-            Kehä III ulkopuoli
-          </li>
-          <hr />
-          <li>
-            <input type="checkbox">
-            Vantaa
-          </li>
-          <hr />
-          <li>
-            <input type="checkbox">
-            Vain luomu
-          </li>
-          <li>
-            <input type="checkbox">
-            Porkkana
-          </li>
-          <li>
-            <input type="checkbox">
-            Kananmuna
-          </li>
-          <li>
-            <input type="checkbox">
-            Peruna
-          </li>
-          <li>
-            <input type="checkbox">
-            Persilja
-          </li>
-          <li>
-            <input type="checkbox">
-            Sipuli
-          </li>
-        </ul>
-        <button class="btn" onclick="closeModal()">
-          Lisää hakuehdot
+        <input class="textfield q" name="q" type="search" placeholder="Etsi..." aria-label="Hae" maxlength="30" autocomplete="off"
+          accept-charset="utf-8" />
+        <button class="btn ajax" type="submit" title="Hae" data-url="/drop/" data-dump=".main">
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="btn ajax" type="button" title="Hakuasetukset" data-url="/settings/" data-dump=".modal">
+          <i class="fas fa-ellipsis-h"></i>
+        </button>
+        <button class="btn ajax" type="submit" title="Hae" data-url="/drop/" data-dump=".main">
+          Hae
         </button>
       </div>
+    </div>
+    <div class="modal">
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="static/scripts.js"></script>

@@ -1,8 +1,11 @@
-from django.conf.urls import url
-from index import views
+from django.urls import path, include
+
+from . import views
 
 urlpatterns = [
-    url("", views.index, name="index"),
-    url("list/", views.list, name="list"),
-    url("detail/", views.detail, name="detail"),
+    path("", views.index, name="index"),
+    path("drop/", views.drop, name="drop"),
+    path("detail/", views.detail, name="detail"),
+    path("db/", views.db, name="db"),
+    path("settings/", views.settings, name="settings"),
 ]

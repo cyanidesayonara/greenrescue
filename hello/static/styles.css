@@ -52,20 +52,21 @@ form {
   background: #fff;
   outline: 0;
 }
-.filter h2 {
+.settings h2 {
   text-align: center;
 }
-.filter ul {
+.settings ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.filter ul li {
+.settings ul li {
   padding: 10px;
 }
 .search {
+  position: relative;
   text-align: center;
-  padding-top: 30%;
+  margin-top: 30%;
 }
 .q {
   padding-left: 40px;

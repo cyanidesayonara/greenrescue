@@ -10,6 +10,9 @@ $(document)
     e.preventDefault();
     var url = $(this).data("url");
     var dump = $(this).data("dump");
+    if (dump == ".modal") {
+      openModal();
+    }
     $.ajax({
       type: "GET",
       url: url,
