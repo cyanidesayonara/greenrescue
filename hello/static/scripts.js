@@ -2,6 +2,7 @@ $(document)
   .on("click", ".ajax", function(e) {
     e.preventDefault();
     var url = this.href;
+    var dump = $(this).data("dump");
     $.ajax({
       type: "GET",
       url: url,
@@ -10,7 +11,7 @@ $(document)
         console.log(thrownError);
       })
       .done(function(response) {
-        $(".main").html(response);
+        $(dump).html(response);
       })
   })
   .on("click", ".dropdown-content .option", function(e) {
