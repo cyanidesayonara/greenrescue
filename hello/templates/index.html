@@ -25,7 +25,7 @@
           <button class="btn" type="submit" title="Hae">
             <i class="fas fa-search"></i>
           </button>
-          <button class="btn" type="button" title="Hakuasetukset">
+          <button class="btn" type="button" title="Hakuasetukset" onclick="openModal()">
             <i class="fas fa-ellipsis-h"></i>
           </button>
           <button class="btn" type="submit" title="Hae">
@@ -35,7 +35,50 @@
       </div>
     </div>
     <div class="modal">
-
+      <div class="filter">
+        <h2>
+          Suodata hakutuloksia
+        </h2>
+        <ul>
+          <li>
+            <input type="checkbox">
+            Kehä III ulkopuoli
+          </li>
+          <hr />
+          <li>
+            <input type="checkbox">
+            Vantaa
+          </li>
+          <hr />
+          <li>
+            <input type="checkbox">
+            Vain luomu
+          </li>
+          <li>
+            <input type="checkbox">
+            Porkkana
+          </li>
+          <li>
+            <input type="checkbox">
+            Kananmuna
+          </li>
+          <li>
+            <input type="checkbox">
+            Peruna
+          </li>
+          <li>
+            <input type="checkbox">
+            Persilja
+          </li>
+          <li>
+            <input type="checkbox">
+            Sipuli
+          </li>
+        </ul>
+        <button class="btn" onclick="closeModal()">
+          Lisää hakuehdot
+        </button>
+      </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="static/scripts.js"></script>

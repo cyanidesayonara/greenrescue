@@ -1,3 +1,10 @@
+function openModal() {
+  $(".modal").fadeIn();
+}
+function closeModal() {
+  $(".modal").fadeOut();
+}
+
 $(document)
   .on("click", ".ajax", function(e) {
     e.preventDefault();
