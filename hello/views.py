@@ -1,29 +1,31 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 
 from .models import Greeting
 
 # Create your views here.
 def index(request):
     # return HttpResponse('Hello from Python!')
-    if request.is_ajax():
-        return render(request, "search.html")
     return render(request, "index.html")
 
 def results(request):
-    return render(request, "results.html")
+    if request.is_ajax():
+        return render(request, "results.html")
+    raise Http404
 
 def detail(request):
-    return render(request, "detail.html")
+    if request.is_ajax():
+        return render(request, "detail.html")
+    raise Http404
 
 def settings(request):
-    return render(request, "settings.html")
+    if request.is_ajax():
+        return render(request, "settings.html")
+    raise Http404
 
 def db(request):
-
     greeting = Greeting()
     greeting.save()
-
     greetings = Greeting.objects.all()
 
     return render(request, "db.html", {"greetings": greetings})
