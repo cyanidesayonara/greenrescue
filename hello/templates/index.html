@@ -10,32 +10,35 @@
     <title>Green Rescue</title>
   </head>
   <body>
-    <nav>
-      <span>
-        <i class="fas fa-arrow-left"></i>
-      </span>
-      <span>
-        <i class="fas fa-bars"></i>
-      </span>
-      <h1>
-        <a class="ajax" href="" data-dump=".main">
-          Green Rescue
-        </a>
-      </h1>
-    </nav>
-    <div class="main">
-      <div class="search">
-        <input class="textfield q" name="q" type="search" placeholder="Etsi..." aria-label="Hae" maxlength="30" autocomplete="off"
-          accept-charset="utf-8" />
-        <button class="btn ajax" type="submit" title="Hae" data-url="/drop/" data-dump=".main">
-          <i class="fas fa-search"></i>
+    <div class="content">
+      <nav>
+        <button class="btn" type="button" onclick="window.history.back()">
+          <i class="fas fa-arrow-left"></i>
         </button>
-        <button class="btn ajax" type="button" title="Hakuasetukset" data-url="/settings/" data-dump=".modal">
-          <i class="fas fa-ellipsis-h"></i>
+        <button class="btn" type="button">
+          <i class="fas fa-bars"></i>
         </button>
-        <button class="btn ajax" type="submit" title="Hae" data-url="/drop/" data-dump=".main">
-          Hae
-        </button>
+        <h1>
+          <a class="ajax" href="" data-dump=".main">
+            Green Rescue
+          </a>
+        </h1>
+      </nav>
+      <div class="main">
+        <div class="search">
+          <input class="textfield q" name="q" type="search" placeholder="Etsi..." aria-label="Hae" maxlength="30" autocomplete="off"
+            accept-charset="utf-8" />
+          <button class="btn ajax" type="submit" title="Hae" data-url="/drop/" data-dump=".main">
+            <i class="fas fa-search"></i>
+          </button>
+          <button class="btn ajax" type="button" title="Hakuasetukset" data-url="/settings/" data-dump=".modal">
+            <i class="fas fa-ellipsis-h"></i>
+          </button>
+          <button class="btn ajax" type="submit" title="Hae" data-url="/results/" data-dump=".results">
+            Hae
+          </button>
+          <div class="results"></div>
+        </div>
       </div>
     </div>
     <div class="modal">

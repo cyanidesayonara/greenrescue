@@ -11,29 +11,49 @@ body {
   margin: auto;
   max-width: 476px;
 }
-body > * {
-  padding: 20px;
+a {
+  color: black;
+  text-decoration: none;
 }
 p {
   margin: 10px 0;
 }
+button {
+  cursor: pointer;
+}
 nav {
+  box-shadow: rgba(150, 150, 150) 0 0 10px;
   background: #08AE9E;
   text-align: center;
 }
 nav h1 {
   font-size: 1.8em;
   font-weight: 600;
-  margin: 0;
+  margin: 10px 0;
 }
-nav span:nth-child(1) {
+nav button:nth-child(1) {
   float: left;
 }
-nav span:nth-child(2  ) {
+nav button:nth-child(2  ) {
   float: right;
 }
 form {
   position: relative;
+}
+.content {
+  min-height: 100vh;
+}
+.content::before {
+  position: absolute;
+  background: url("bg.jpg");
+  content: "";
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .5;
+}
+.content > * {
+  padding: 20px;
 }
 .modal {
   display: none;
@@ -50,7 +70,7 @@ form {
   border: 3px solid rgba(0, 0, 0, .5);
   margin: 10px;
   border-radius: .75rem;
-  padding: 15px;
+  padding: 10px;
   background: #fff;
   outline: 0;
 }
@@ -71,46 +91,35 @@ form {
   margin-top: 30%;
 }
 .q {
+  width: 250px;
   padding-left: 40px;
   padding-right: 40px;
 }
-.search button:nth-of-type(1) {
+.search>button:nth-of-type(1) {
   position: absolute;
-  left: calc(50% - 130px);
+  left: calc(50% - 125px);
   padding: 4px;
-  top: 10px;
+  top: 6px;
   border-color: transparent;
 }
-.search button:nth-of-type(2) {
+.search>button:nth-of-type(2) {
   position: absolute;
-  right: calc(50% - 130px);
+  right: calc(50% - 125px);
   padding: 4px;
-  top: 10px;
+  top: 6px;
 }
-.search button:nth-of-type(3) {
+.search>button:nth-of-type(3) {
   display: block;
   margin: 10px auto;
 }
-.ajax {
-  color: black;
-  cursor: pointer;
-  text-decoration: none;
-}
 
-.list .item {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+.results>* {
+  margin: 20px 0;
+  width: 100%;
   background: #ddd;
-  margin: 10px 0;
 }
-.list .item:first-child:hover {
+.results>*:hover {
   box-shadow: rgba(150, 150, 150) 0 0 10px;  
-}
-.list .item span {
-  width: 50%;
-  padding: 5px;
 }
 .detail .img {
   float: left;

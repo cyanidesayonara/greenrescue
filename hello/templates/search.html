@@ -1,13 +1,14 @@
 <div class="search">
-  <input class="textfield q" name="q" type="search" placeholder="Etsi..." aria-label="Hae" maxlength="30"
-    autocomplete="off" accept-charset="utf-8" />
+  <input class="textfield q" name="q" type="search" placeholder="Etsi..." aria-label="Hae" maxlength="30" autocomplete="off"
+    accept-charset="utf-8" />
   <button class="btn ajax" type="submit" title="Hae" data-url="/drop/" data-dump=".main">
     <i class="fas fa-search"></i>
   </button>
   <button class="btn ajax" type="button" title="Hakuasetukset" data-url="/settings/" data-dump=".modal">
     <i class="fas fa-ellipsis-h"></i>
   </button>
-  <button class="btn ajax" type="submit" title="Hae" data-url="/drop/" data-dump=".main">
+  <button class="btn ajax" type="submit" title="Hae" data-url="/results/" data-dump=".results">
     Hae
   </button>
+  <div class="results"></div>
 </div>

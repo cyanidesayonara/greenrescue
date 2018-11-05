@@ -10,8 +10,8 @@ def index(request):
         return render(request, "search.html")
     return render(request, "index.html")
 
-def drop(request):
-    return render(request, "drop.html")
+def results(request):
+    return render(request, "results.html")
 
 def detail(request):
     return render(request, "detail.html")
