@@ -26,12 +26,14 @@ nav h1 {
   font-weight: 600;
   margin: 0;
 }
+nav span:nth-child(1) {
+  float: left;
+}
+nav span:nth-child(2  ) {
+  float: right;
+}
 form {
   position: relative;
-}
-.btns {
-  text-align: center;
-  padding: 20px;
 }
 .modal {
   display: none;
@@ -70,17 +72,18 @@ form {
 }
 .q {
   padding-left: 40px;
+  padding-right: 40px;
 }
 .search button:nth-of-type(1) {
   position: absolute;
-  left: calc(50% - 110px);
+  left: calc(50% - 130px);
   padding: 4px;
   top: 10px;
   border-color: transparent;
 }
 .search button:nth-of-type(2) {
   position: absolute;
-  right: calc(50% - 110px);
+  right: calc(50% - 130px);
   padding: 4px;
   top: 10px;
 }
