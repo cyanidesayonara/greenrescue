@@ -1,9 +1,9 @@
 function openModal() {
-  $(".modal").fadeIn();
-}
+  $("#modal").fadeIn();
+};
 function closeModal() {
-  $(".modal").fadeOut();
-}
+  $("#modal").fadeOut();
+};
 function pushState(url) {
   var main = $(".main");
   var context = main[0].innerHTML;
@@ -12,7 +12,7 @@ function pushState(url) {
     "url": url,
   };
   history.pushState(state, "", "");
-}
+};
 function replaceState(url) {
   var main = $(".main");
   var context = main[0].innerHTML;
@@ -21,17 +21,23 @@ function replaceState(url) {
     "url": url,
   };
   history.replaceState(state, "", "");
-}
+};
 
 $(document)
   .ready(function() {
     replaceState(window.location.href);
   })
+  .on("click", "#modal", function(e) {
+    if (e.target != this) {
+      return false;
+    }
+    closeModal();
+  })
   .on("click", ".ajax", function(e) {
     e.preventDefault();
     var url = $(this).data("url");
     var dump = $(this).data("dump");
-    if (dump == ".modal") {
+    if (dump == "#modal") {
       openModal();
     }
     pushState(url);
@@ -49,6 +55,16 @@ $(document)
   })
   .on("click", ".buy", function() {
     alert("Ostettu!");
+  })
+  .on("click", ".amount .decrease", function() {
+    var amount = parseInt($(this).siblings("span").html());
+    if (amount !== 0) {
+      $(this).siblings("span").html(amount - 1);
+    }
+  })
+  .on("click", ".amount .increase", function () {
+    var amount = parseInt($(this).siblings("span").html());
+    $(this).siblings("span").html(amount + 1);
   });
 
 $(window)

@@ -23,9 +23,4 @@ def settings(request):
         return render(request, "settings.html")
     raise Http404
 
-def db(request):
-    greeting = Greeting()
-    greeting.save()
-    greetings = Greeting.objects.all()
 
-    return render(request, "db.html", {"greetings": greetings})

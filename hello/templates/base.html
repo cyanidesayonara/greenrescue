@@ -19,7 +19,7 @@
       <button class="btn" type="button" onclick="window.history.back()">
         <i class="fas fa-arrow-left"></i>
       </button>
-      <button class="btn" type="button">
+      <button class="btn ajax" type="button" data-url="/settings/" data-dump="#modal">
         <i class="fas fa-bars"></i>
       </button>
       <h1>
@@ -33,7 +33,7 @@
       {% endblock %}
     </div>
   </div>
-  <div class="modal">
+  <div id="modal">
   </div>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="static/scripts.js"></script>
