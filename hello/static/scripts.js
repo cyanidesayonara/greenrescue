@@ -53,9 +53,6 @@ $(document)
         replaceState(url);
       });
   })
-  .on("click", ".buy", function() {
-    alert("Ostettu!");
-  })
   .on("click", ".amount .decrease", function() {
     var amount = parseInt($(this).siblings("span").html());
     if (amount !== 0) {
@@ -65,6 +62,15 @@ $(document)
   .on("click", ".amount .increase", function () {
     var amount = parseInt($(this).siblings("span").html());
     $(this).siblings("span").html(amount + 1);
+  })
+  .on("click", ".cart", function() {
+    var button = $(this);
+    var amount = button.siblings(".amount").children("span").html().trim();
+    //button.siblings(".amount").data("amount", amount);
+    button.addClass("flash");
+    setTimeout(function() {
+      button.removeClass("flash");
+    }, 1000)
   });
 
 $(window)

@@ -29,7 +29,7 @@ nav {
 nav h1 {
   font-size: 1.8em;
   font-weight: 600;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 nav button:nth-child(1) {
   float: left;
@@ -161,4 +161,9 @@ form {
 }
 .amount .increase {
   float: right;
+}
+.flash {
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  transform: rotate(360deg);
 }
