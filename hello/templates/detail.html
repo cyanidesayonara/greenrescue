@@ -1,79 +1,81 @@
-<div class="detail">
-  <div>
-    <button class="btn" style="float:right">
-      <i class="fas fa-shopping-basket fa-lg"></i>
-    </button>
-    <h1>
-      Kampin noutopiste
-    </h1>
-    <i class="fas fa-info-circle fa-lg"></i>
-  </div>
-  <div class="item">
+{% block content %}
+  <div class="detail">
     <div>
+      <button class="btn ajax" style="float:right" data-url="/basket/" data-dump=".main">
+        <i class="fas fa-shopping-basket fa-lg"></i>
+      </button>
       <h1>
-        PORKKANA
+        Kampin noutopiste
       </h1>
-      <h2>
-        LUOMU
-      </h2>
-      <div class="amount">
-        <i class="fas fa-chevron-left fa-2x decrease"></i>
-        <i class="fas fa-chevron-right fa-2x increase"></i>
-        <span>
-          3
-        </span>
+      <i class="fas fa-info-circle fa-lg"></i>
+    </div>
+    <div class="item">
+      <div>
+        <h1>
+          PORKKANA
+        </h1>
+        <h2>
+          LUOMU
+        </h2>
+        <div class="amount">
+          <i class="fas fa-chevron-left fa-2x decrease"></i>
+          <i class="fas fa-chevron-right fa-2x increase"></i>
+          <span>
+            3
+          </span>
+        </div>
+        <i class="fas fa-cart-plus fa-2x cart"></i>
       </div>
-      <i class="fas fa-cart-plus fa-2x cart"></i>
+    </div>
+    <div class="item">
+      <div>
+        <h1>
+          KANANMUNA
+        </h1>
+        <h2>
+          LUOMU
+        </h2>
+        <div class="amount">
+          <i class="fas fa-chevron-left fa-2x decrease"></i>
+          <i class="fas fa-chevron-right fa-2x increase"></i>
+          <span>
+            36
+          </span>
+        </div>
+        <i class="fas fa-cart-plus fa-2x cart"></i>
+      </div>
+    </div>
+    <div class="item">
+      <div>
+        <h1>
+          PERUNA
+        </h1>
+        <br>
+        <div class="amount">
+          <i class="fas fa-chevron-left fa-2x decrease"></i>
+          <i class="fas fa-chevron-right fa-2x increase"></i>
+          <span>
+            5
+          </span>
+        </div>
+        <i class="fas fa-cart-plus fa-2x cart"></i>
+      </div>
+    </div>
+    <div class="item">
+      <div>
+        <h1>
+          PERSILJA
+        </h1>
+        <br>
+        <div class="amount">
+          <i class="fas fa-chevron-left fa-2x decrease"></i>
+          <i class="fas fa-chevron-right fa-2x increase"></i>
+          <span>
+            0
+          </span>
+        </div>
+        <i class="fas fa-cart-plus fa-2x cart"></i>
+      </div>    
     </div>
   </div>
-  <div class="item">
-    <div>
-      <h1>
-        KANANMUNA
-      </h1>
-      <h2>
-        LUOMU
-      </h2>
-      <div class="amount">
-        <i class="fas fa-chevron-left fa-2x decrease"></i>
-        <i class="fas fa-chevron-right fa-2x increase"></i>
-        <span>
-          36
-        </span>
-      </div>
-      <i class="fas fa-cart-plus fa-2x cart"></i>
-    </div>
-  </div>
-  <div class="item">
-    <div>
-      <h1>
-        PERUNA
-      </h1>
-      <br>
-      <div class="amount">
-        <i class="fas fa-chevron-left fa-2x decrease"></i>
-        <i class="fas fa-chevron-right fa-2x increase"></i>
-        <span>
-          5
-        </span>
-      </div>
-      <i class="fas fa-cart-plus fa-2x cart"></i>
-    </div>
-  </div>
-  <div class="item">
-    <div>
-      <h1>
-        PERSILJA
-      </h1>
-      <br>
-      <div class="amount">
-        <i class="fas fa-chevron-left fa-2x decrease"></i>
-        <i class="fas fa-chevron-right fa-2x increase"></i>
-        <span>
-          0
-        </span>
-      </div>
-      <i class="fas fa-cart-plus fa-2x cart"></i>
-    </div>    
-  </div>
-</div>
+{% endblock %}
