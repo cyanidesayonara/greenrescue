@@ -13,7 +13,6 @@ def detail(request):
 def settings(request):
     return render(request, "settings.html")
 
-
 def basket(request):
     return render(request, "basket.html")
 
