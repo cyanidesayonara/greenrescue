@@ -66,7 +66,8 @@ $(document)
   .on("click", ".cart", function() {
     var button = $(this);
     var amount = button.siblings(".amount").children("span").html().trim();
-    //button.siblings(".amount").data("amount", amount);
+    console.log(amount)
+    button.siblings(".amount").data("amount", amount);
     button.addClass("flash");
     setTimeout(function() {
       button.removeClass("flash");

@@ -29,7 +29,7 @@ nav {
 nav h1 {
   font-size: 1.8em;
   font-weight: 600;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 nav button:nth-child(1) {
   float: left;
@@ -39,6 +39,15 @@ nav button:nth-child(2  ) {
 }
 form {
   position: relative;
+}
+table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  padding: 4px;
+}
+tbody tr {
+  border-top: 1px solid black;
 }
 .content {
   min-height: 100vh;
@@ -68,13 +77,16 @@ form {
 .textfield,
 #modal>*,
 .results>*,
-.item>* {
+.item>*,
+.basket>div {
   border: 3px solid rgba(0, 0, 0, .5);
-  margin: 10px;
   border-radius: .75rem;
   padding: 10px;
   background: #fff;
   outline: 0;
+}
+.basket {
+  text-align: center;
 }
 .settings h2 {
   text-align: center;
@@ -99,14 +111,14 @@ form {
 }
 .search>button:nth-of-type(1) {
   position: absolute;
-  left: calc(50% - 125px);
+  left: calc(50% - 115px);
   padding: 4px;
   top: 6px;
   border-color: transparent;
 }
 .search>button:nth-of-type(2) {
   position: absolute;
-  right: calc(50% - 125px);
+  right: calc(50% - 115px);
   padding: 4px;
   top: 6px;
 }
@@ -147,6 +159,7 @@ form {
   padding: 10px;
 }
 .item {
+  padding: 10px;
   text-align: center;
   width: 50%;
 }
