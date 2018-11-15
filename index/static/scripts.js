@@ -72,6 +72,9 @@ $(document)
     setTimeout(function() {
       button.removeClass("flash");
     }, 1000)
+  })
+  .on("click", ".buy", function() {
+    alert("Ostettu!")
   });
 
 $(window)
