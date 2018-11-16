@@ -28,10 +28,9 @@ $(document)
     replaceState(window.location.href);
   })
   .on("click", "#modal", function(e) {
-    if (e.target != this) {
-      return false;
+    if (e.target == this) {
+      closeModal();
     }
-    closeModal();
   })
   .on("click", ".ajax", function(e) {
     e.preventDefault();
@@ -67,14 +66,11 @@ $(document)
     var button = $(this);
     var amount = button.siblings(".amount").children("span").html().trim();
     console.log(amount)
-    button.siblings(".amount").data("amount", amount);
+    button.siblings(".amount").attr("data-amount", amount);
     button.addClass("flash");
     setTimeout(function() {
       button.removeClass("flash");
     }, 1000)
-  })
-  .on("click", ".buy", function() {
-    alert("Ostettu!")
   });
 
 $(window)

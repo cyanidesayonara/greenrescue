@@ -16,5 +16,8 @@ def settings(request):
 def basket(request):
     return render(request, "basket.html")
 
+def paid(request):
+    return render(request, "paid.html")
+
 
 
