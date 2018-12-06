@@ -1,6 +1,7 @@
 Kun aloitat projektin työstämisen:
-    git pull origin master
+    git pull origin heroku
 
 Kun haluat siirtää muutokset serverille:
     git add .
     git commit -m "kommentti tähän"
+    git push origin heroku
